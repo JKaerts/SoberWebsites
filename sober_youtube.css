@@ -1,0 +1,18 @@
+@-moz-document domain(youtube.com) {
+    /* Hide the "related videos" sidebar */
+    #related {
+        visibility: hidden !important;
+    }
+    /* Hide the view count of the video you're viewing */
+    .view-count {
+        visibility: hidden !important;
+    }
+    /* Hide the short viewcount */
+    .short-view-count {
+        visibility: hidden !important;
+    }
+    /* Hide the like-dislike bar */
+    ytd-sentiment-bar-renderer {
+        visibility: hidden !important;
+    }
+}
