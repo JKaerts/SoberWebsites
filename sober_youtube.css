@@ -15,4 +15,8 @@
     ytd-sentiment-bar-renderer {
         visibility: hidden !important;
     }
+    /* Hide the endscreen tiles */
+    .ytp-endscreen-content {
+        display: none !important;
+    }
 }
