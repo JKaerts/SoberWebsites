@@ -12,7 +12,7 @@
         visibility: hidden !important;
     }
     /* Hide the like-dislike bar */
-    ytd-sentiment-bar-renderer {
+    #top-level-buttons-computed {
         visibility: hidden !important;
     }
     /* Hide the endscreen tiles */
