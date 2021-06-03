@@ -3,18 +3,6 @@
     #related {
         visibility: hidden !important;
     }
-    /* Hide the view count of the video you're viewing */
-    .view-count {
-        visibility: hidden !important;
-    }
-    /* Hide the short viewcount */
-    .short-view-count {
-        visibility: hidden !important;
-    }
-    /* Hide the like-dislike bar */
-    #top-level-buttons-computed {
-        visibility: hidden !important;
-    }
     /* Hide the endscreen tiles */
     .ytp-endscreen-content {
         display: none !important;
