@@ -4,8 +4,7 @@
 // @version      1.1
 // @description  My personal blocklist
 // @author       Jonas Kaerts
-// @match        https://www.reddit.com/*
-// @match        https://old.reddit.com/*
+// @match        https://*.reddit.com/*
 // @match        https://*.ycombinator.com/*
 // @match        https://*.algolia.com/*
 // @match        https://lobste.rs/*
