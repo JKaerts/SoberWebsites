@@ -1,33 +1,29 @@
 // ==UserScript==
 // @name         Youtube cleaner
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      2.0
 // @description  Removes cruft from youtube
 // @author       You
 // @grant        none
-// @include      *.youtube.com/*
+// @match        *.youtube.com/*
 // ==/UserScript==
 
-(function() {
-    'use strict';
+function hideElements(selector) {
+    document.querySelectorAll(selector)
+        .forEach(el => { el.innerHTML = '' });
+}
 
-    function hideElements(selector) {
-        const elements = document.querySelectorAll(selector);
-        for (const el of elements) {
-            el.innerHTML = '';
-        }
-    }
-
+function hideCruft() {
     // related videos
-    hideElements('#related');
-    
-    // view counts
-    hideElements('.view-count');
-    hideElements('.short-view-count');
-    
-    // like-dislike bar
-    hideElements('ytd-sentiment-bar-renderer');
-    
+    hideElements('div#related');
+
     // tiles with related videos after video
     hideElements('.ytp-endscreen-content');
-})();
+
+    // comments
+    hideElements('ytd-comments#comments')
+}
+
+// Call cruft remover every so often
+const repeat_time_in_seconds = 2
+setInterval(hideCruft, repeat_time_in_seconds * 1000);
